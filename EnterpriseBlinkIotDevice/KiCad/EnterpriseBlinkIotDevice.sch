@@ -1,0 +1,243 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:TIP120 Q1
+U 1 1 5D7435C2
+P 8900 3350
+F 0 "Q1" H 9107 3396 50  0000 L CNN
+F 1 "TIP120" H 9107 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9100 3275 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP120.pdf" H 8900 3350 50  0001 L CNN
+	1    8900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5D757AE8
+P 7250 1950
+F 0 "J1" V 7214 1762 50  0000 R CNN
+F 1 "3V3" V 7123 1762 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7250 1950 50  0001 C CNN
+F 3 "~" H 7250 1950 50  0001 C CNN
+	1    7250 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5D758513
+P 7250 2200
+F 0 "#PWR0102" H 7250 1950 50  0001 C CNN
+F 1 "GND" H 7255 2027 50  0000 C CNN
+F 2 "" H 7250 2200 50  0001 C CNN
+F 3 "" H 7250 2200 50  0001 C CNN
+	1    7250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 5DD82550
+P 8950 2100
+F 0 "#LOGO1" H 8950 2375 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 8950 1875 50  0001 C CNN
+F 2 "" H 8950 2100 50  0001 C CNN
+F 3 "~" H 8950 2100 50  0001 C CNN
+	1    8950 2100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7150 2350
+NoConn ~ 6850 2750
+NoConn ~ 6850 3050
+NoConn ~ 6850 3150
+NoConn ~ 7650 2650
+NoConn ~ 7650 2750
+NoConn ~ 7650 2850
+NoConn ~ 7650 2950
+NoConn ~ 7650 3050
+NoConn ~ 7650 3150
+NoConn ~ 7650 3250
+NoConn ~ 7650 3450
+NoConn ~ 7650 3550
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5DE1BC64
+P 7800 2500
+F 0 "SW1" V 7750 2650 50  0000 L CNN
+F 1 "SW_Push" V 7845 2648 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7800 2700 50  0001 C CNN
+F 3 "~" H 7800 2700 50  0001 C CNN
+	1    7800 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 3350 7800 3350
+Wire Wire Line
+	7350 2150 7350 2250
+Wire Wire Line
+	7800 2300 7800 2250
+Wire Wire Line
+	7800 2250 7350 2250
+Connection ~ 7350 2250
+Wire Wire Line
+	7350 2250 7350 2350
+Wire Wire Line
+	7250 2150 7250 2200
+$Comp
+L Device:LED D1
+U 1 1 5D7416E9
+P 8000 3050
+F 0 "D1" H 8000 3150 50  0000 C CNN
+F 1 "LED" H 8000 3250 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 8000 3050 50  0001 C CNN
+F 3 "~" H 8000 3050 50  0001 C CNN
+	1    8000 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D742726
+P 8400 3050
+F 0 "R1" V 8607 3050 50  0000 C CNN
+F 1 "220" V 8516 3050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8330 3050 50  0001 C CNN
+F 3 "~" H 8400 3050 50  0001 C CNN
+	1    8400 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5DE23778
+P 8650 3050
+F 0 "#PWR0104" H 8650 2800 50  0001 C CNN
+F 1 "GND" H 8655 2877 50  0000 C CNN
+F 2 "" H 8650 3050 50  0001 C CNN
+F 3 "" H 8650 3050 50  0001 C CNN
+	1    8650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5D756AA5
+P 9100 3850
+F 0 "J3" V 8972 3930 50  0000 L CNN
+F 1 "12V" V 9063 3930 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9100 3850 50  0001 C CNN
+F 3 "~" H 9100 3850 50  0001 C CNN
+	1    9100 3850
+	0    1    1    0   
+$EndComp
+Connection ~ 7800 3350
+Wire Wire Line
+	7800 3350 8250 3350
+Wire Wire Line
+	8700 3350 8550 3350
+$Comp
+L Device:R R2
+U 1 1 5D744786
+P 8400 3350
+F 0 "R2" V 8193 3350 50  0000 C CNN
+F 1 "220" V 8284 3350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8330 3350 50  0001 C CNN
+F 3 "~" H 8400 3350 50  0001 C CNN
+	1    8400 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DE81B34
+P 8400 3650
+F 0 "R3" V 8193 3650 50  0000 C CNN
+F 1 "10k" V 8284 3650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8330 3650 50  0001 C CNN
+F 3 "~" H 8400 3650 50  0001 C CNN
+	1    8400 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 3350 7800 3650
+Wire Wire Line
+	7800 3650 8250 3650
+Wire Wire Line
+	7800 2700 7800 3050
+Wire Wire Line
+	9000 3550 9000 3650
+Wire Wire Line
+	7850 3050 7800 3050
+Connection ~ 7800 3050
+Wire Wire Line
+	7800 3050 7800 3350
+Wire Wire Line
+	8150 3050 8250 3050
+Wire Wire Line
+	8550 3050 8650 3050
+Connection ~ 9000 3650
+$Comp
+L MCU_Module:WeMos_D1_mini U1
+U 1 1 5D73D36D
+P 7250 3150
+F 0 "U1" H 7050 2350 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 7600 2350 50  0000 C CNN
+F 2 "Module:WEMOS_D1_mini_light" H 7250 2000 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 5400 2000 50  0001 C CNN
+	1    7250 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3950 7250 4000
+$Comp
+L power:GND #PWR0103
+U 1 1 5DE1F223
+P 7250 4000
+F 0 "#PWR0103" H 7250 3750 50  0001 C CNN
+F 1 "GND" H 7255 3827 50  0000 C CNN
+F 2 "" H 7250 4000 50  0001 C CNN
+F 3 "" H 7250 4000 50  0001 C CNN
+	1    7250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5D73E605
+P 8700 3700
+F 0 "#PWR0101" H 8700 3450 50  0001 C CNN
+F 1 "GND" H 8705 3527 50  0000 C CNN
+F 2 "" H 8700 3700 50  0001 C CNN
+F 3 "" H 8700 3700 50  0001 C CNN
+	1    8700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3700 8700 3650
+Wire Wire Line
+	9000 3650 8700 3650
+Wire Wire Line
+	8700 3650 8550 3650
+Connection ~ 8700 3650
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5D75706B
+P 9000 2850
+F 0 "J2" H 9080 2842 50  0000 L CNN
+F 1 "Load" H 9080 2751 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9000 2850 50  0001 C CNN
+F 3 "~" H 9000 2850 50  0001 C CNN
+	1    9000 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9100 3650 9100 3050
+Wire Wire Line
+	9000 3050 9000 3150
+$EndSCHEMATC

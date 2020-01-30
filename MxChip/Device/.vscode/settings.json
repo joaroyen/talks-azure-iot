@@ -1,0 +1,11 @@
+{
+    "files.exclude": {
+        ".build": true,
+        ".iotworkbenchproject": true
+    },
+    "cSpell.words": [
+        "MQTT",
+        "Wifi",
+        "println"
+    ]
+}

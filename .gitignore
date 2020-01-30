@@ -1,0 +1,14 @@
+*.user
+.vs/
+bin/
+obj/
+local.settings.json
+.vscode/ipch/
+*.pubxml
+arduino.json
+c_cpp_properties.json
+
+# KiCad
+*.*-bak
+fp-info-cache
+*-gerbers/
